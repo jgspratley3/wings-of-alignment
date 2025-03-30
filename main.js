@@ -1,0 +1,1 @@
+// React code would be compiled here
