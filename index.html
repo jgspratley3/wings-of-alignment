@@ -1,1 +1,105 @@
-<!DOCTYPE html><html><head><title>Wings of Alignment</title></head><body><div id='root'></div><script src='main.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wings of Alignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-indigo-950 to-purple-900 text-white font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 bg-indigo-950/80 backdrop-blur z-50 p-4 flex justify-between items-center shadow-lg">
+      <img src="logo.png" alt="Wings of Alignment Logo" class="h-12 rounded-2xl" />
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Sessions</a>
+        <a href="#accessibility" class="hover:underline">Accessibility</a>
+        <a href="#blog" class="hover:underline">Blog</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <a href="#contact" class="bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded-full text-sm">Book a Session</a>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-24 px-6 bg-cover bg-center bg-no-repeat" style="background-image: url('moonlit-river.jpg');">
+      <h1 class="text-5xl font-bold mb-4">Distance Reiki for real life, real people, and real healing</h1>
+      <p class="max-w-xl mx-auto text-lg bg-indigo-950/60 p-4 rounded-xl mb-6">
+        Wings of Alignment is a space for deep rest, reconnection, and gentle support. I offer distance Reiki for anyone navigating stress, grief, overwhelm, or just craving energetic grounding.
+      </p>
+      <div class="space-x-4">
+        <a href="#contact" class="bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-full">Book a Session</a>
+        <a href="#about" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-indigo-900">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-indigo-800 py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Meet Your Practitioner</h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        Hi, I’m [Your Name]—autistic, ADHD, neurodivergent, and someone who’s walked a long road through trauma, grief, and healing. Reiki helped me reconnect with myself, and now I share that same calm, grounded care with others.
+      </p>
+      <a href="#contact" class="mt-6 inline-block bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-full">Read My Full Story</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 text-center bg-gradient-to-b from-indigo-900 to-purple-800">
+      <h2 class="text-3xl font-semibold mb-6">Offerings</h2>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-indigo-950/50 rounded-2xl p-6">
+          <h3 class="text-xl font-medium mb-2">30-Min Distance Reiki</h3>
+          <p>Gentle reset, support, grounding.</p>
+        </div>
+        <div class="bg-indigo-950/50 rounded-2xl p-6">
+          <h3 class="text-xl font-medium mb-2">60-Min Distance Reiki</h3>
+          <p>Deeper dive, intuitive insights, full energetic support.</p>
+        </div>
+        <div class="bg-indigo-950/50 rounded-2xl p-6">
+          <h3 class="text-xl font-medium mb-2">Reiki Bundles</h3>
+          <p>Ongoing care for your healing journey.</p>
+        </div>
+        <div class="bg-indigo-950/50 rounded-2xl p-6">
+          <h3 class="text-xl font-medium mb-2">Sliding Scale & Donation</h3>
+          <p>Accessible healing options for all.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section id="accessibility" class="bg-indigo-800 py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Healing Should Be Accessible</h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        Wings of Alignment centers LGBTQIA+ folks, BIPOC, disabled and neurodivergent people, and anyone who’s ever felt left out of traditional healing spaces. Sliding scale, donation-based sessions, and community care options available.
+      </p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-6 text-center bg-gradient-to-b from-purple-900 to-indigo-950">
+      <h2 class="text-3xl font-semibold mb-6">On the Blog</h2>
+      <div class="space-y-4 max-w-xl mx-auto">
+        <p>* What is Reiki, Really?</p>
+        <p>* Healing Crises and Why They're Not a Setback</p>
+        <p>* Accessibility in Energy Work</p>
+      </div>
+      <a href="#blog" class="mt-6 inline-block bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-full">Read More Posts</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-indigo-950 py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Ready to Book?</h2>
+      <p class="max-w-xl mx-auto text-lg mb-6">
+        Let’s work together—no pressure, no perfection needed.
+      </p>
+      <a href="https://calendly.com" target="_blank" class="bg-white text-indigo-950 px-6 py-3 rounded-full font-semibold">Book Through Calendly</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm bg-indigo-950">
+      <p>© <span id="year"></span> Wings of Alignment. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
